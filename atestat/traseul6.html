@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Traseul 6 </title>
+        <link rel="icon" type="image/png" href="materiale/icon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html#"> <div id="logo"> SwiftRail </div> </a>
+            <ul id="nav">
+                <a href="index.html#trasee" title="Vezi traseele noastre"> <li> Trasee </li> </a>
+                <a href="index.html#anunturi" title="Află despre cele mai noi defecțiuni, întârzieri sau alte informații importante"> <li> Anunțuri </li> </a>
+                <a href="index.html#servicii" title="Află despre condițiile din tren"> <li> Servicii </li> </a>
+                <a href="index.html#faq" title="Vezi secțiunea de întrebări frecvente"> <li> FAQ </li> </a>
+                <a href="index.html#about" title="Află mai multe despre noi"> <li> Despre noi </li> </a>
+            </ul>
+            <button id="menu-icon" onclick="menu()"> <img src="materiale/menu.svg" alt="meniu"> </button>
+            <ul id="mobile-nav">
+                <a onclick="menu()" href="index.html#trasee" title="Vezi traseele noastre"> <li> Trasee </li> </a>
+                <a onclick="menu()" href="index.html#anunturi" title="Află despre cele mai noi defecțiuni, întârzieri sau alte informații importante"> <li> Anunțuri </li> </a>
+                <a onclick="menu()" href="index.html#servicii" title="Află despre condițiile din tren"> <li> Servicii </li> </a>
+                <a onclick="menu()" href="index.html#faq" title="Vezi secțiunea de întrebări frecvente"> <li> FAQ </li> </a>
+                <a onclick="menu()" href="index.html#about" title="Află mai multe despre noi"> <li> Despre noi </li> </a>
+            </ul>
+        </header>
+        <main>
+            <section class="sens-tren">
+                <h2> Viena - München - Zürich </h2>
+                <div class="container">
+                    <table class="info-tren">
+                        <tr>
+                            <td class="topleft"> Plecare la </td>
+                            <td> SR604 </td>
+                            <td class="topright"> Sosire la </td>
+                        </tr>
+                        <tr>
+                            <td> 06:00 </td>
+                            <td> 7h 38m </td>
+                            <td> 13:38 </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> Wien Hbf </td>
+                            <td> L - D </td>
+                            <td class="bottomright"> Zürich Hb </td>
+                        </tr>
+                    </table>
+                    <table class="pret-tren col2">
+                        <tr>
+                            <td class="top" colspan="2"> Preț întreg bilet </td>
+                        </tr>
+                        <tr>
+                            <td> Economic </td>
+                            <td> Premium </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> 130 lei </td>
+                            <td class="bottomright"> 195 lei </td>
+                        </tr>
+                    </table>
+                    <button class="box" onclick="opriri(1)"> Opriri </button>
+                </div>
+                <table class="opriri-tren" id="tren1">
+                    <tr>
+                        <td> Wien Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Linz Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Salzburg Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> München Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Memmingen </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Bregenz </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Zürich Hb </td>
+                    </tr>
+                    <tr>
+                        <td class="empty"> 06:00 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 07:15 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 08:25 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 10:05 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 11:07 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 12:09 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 13:38 </td>
+                    </tr>
+                </table>
+                <div class="container">
+                    <table class="info-tren">
+                        <tr>
+                            <td class="topleft"> Plecare la </td>
+                            <td> SR605 </td>
+                            <td class="topright"> Sosire la </td>
+                        </tr>
+                        <tr>
+                            <td> 14:00 </td>
+                            <td> 7h 38m </td>
+                            <td> 21:38 </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> Wien Hbf </td>
+                            <td> L - D </td>
+                            <td class="bottomright"> Zürich Hb </td>
+                        </tr>
+                    </table>
+                    <table class="pret-tren col2">
+                        <tr>
+                            <td class="top" colspan="2"> Preț întreg bilet </td>
+                        </tr>
+                        <tr>
+                            <td> Economic </td>
+                            <td> Premium </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> 130 lei </td>
+                            <td class="bottomright"> 195 lei </td>
+                        </tr>
+                    </table>
+                    <button class="box" onclick="opriri(2)"> Opriri </button>
+                </div>
+                <table class="opriri-tren" id="tren2">
+                    <tr>
+                        <td> Wien Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Linz Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Salzburg Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> München Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Memmingen </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Bregenz </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Zürich Hb </td>
+                    </tr>
+                    <tr>
+                        <td class="empty"> 14:00 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 15:15 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 16:25 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 18:05 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 19:07 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 20:09 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 21:38 </td>
+                    </tr>
+                </table>
+                <div class="container">
+                    <table class="info-tren">
+                        <tr>
+                            <td class="topleft"> Plecare la </td>
+                            <td> SR606 </td>
+                            <td class="topright"> Sosire la </td>
+                        </tr>
+                        <tr>
+                            <td> 22:00 </td>
+                            <td> 7h 38m </td>
+                            <td> 05:38 (+1 zi) </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> Wien Hbf </td>
+                            <td> L - D </td>
+                            <td class="bottomright"> Zürich Hb </td>
+                        </tr>
+                    </table>
+                    <table class="pret-tren col3">
+                        <tr>
+                            <td class="top" colspan="3"> Preț întreg bilet </td>
+                        </tr>
+                        <tr>
+                            <td> Economic </td>
+                            <td> Premium </td>
+                            <td> Night </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> 130 lei </td>
+                            <td> 195 lei </td>
+                            <td class="bottomright"> 195 lei </td>
+                        </tr>
+                    </table>
+                    <button class="box" onclick="opriri(3)"> Opriri </button>
+                </div>
+                <table class="opriri-tren" id="tren3">
+                    <tr>
+                        <td> Wien Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Linz Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Salzburg Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> München Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Memmingen </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Bregenz </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Zürich Hb </td>
+                    </tr>
+                    <tr>
+                        <td class="empty"> 22:00 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 23:15 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 00:25 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 02:05 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 03:07 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 04:09 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 05:38 </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="sens-tren">
+                <h2> Zürich - München - Viena </h2>
+                <div class="container">
+                    <table class="info-tren">
+                        <tr>
+                            <td class="topleft"> Plecare la </td>
+                            <td> SR801 </td>
+                            <td class="topright"> Sosire la </td>
+                        </tr>
+                        <tr>
+                            <td> 06:00 </td>
+                            <td> 7h 38m </td>
+                            <td> 13:38 </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> Zürich Hb </td>
+                            <td> L - D </td>
+                            <td class="bottomright"> Wien Hbf </td>
+                        </tr>
+                    </table>
+                    <table class="pret-tren col2">
+                        <tr>
+                            <td class="top" colspan="2"> Preț întreg bilet </td>
+                        </tr>
+                        <tr>
+                            <td> Economic </td>
+                            <td> Premium </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> 130 lei </td>
+                            <td class="bottomright"> 195 lei </td>
+                        </tr>
+                    </table>
+                    <button class="box" onclick="opriri(4)"> Opriri </button>
+                </div>
+                <table class="opriri-tren" id="tren4">
+                    <tr>
+                        <td> Zürich Hb </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Bregenz </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Memmingen </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> München Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Salzburg Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Linz Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Wien Hbf </td>
+                    </tr>
+                    <tr>
+                        <td class="empty"> 06:00 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 07:29 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 08:31 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 09:33 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 11:13 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 12:23 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 13:38 </td>
+                    </tr>
+                </table>
+                <div class="container">
+                    <table class="info-tren">
+                        <tr>
+                            <td class="topleft"> Plecare la </td>
+                            <td> SR802 </td>
+                            <td class="topright"> Sosire la </td>
+                        </tr>
+                        <tr>
+                            <td> 14:00 </td>
+                            <td> 7h 38m </td>
+                            <td> 21:38 </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> Zürich Hb </td>
+                            <td> L - D </td>
+                            <td class="bottomright"> Wien Hbf </td>
+                        </tr>
+                    </table>
+                    <table class="pret-tren col2">
+                        <tr>
+                            <td class="top" colspan="2"> Preț întreg bilet </td>
+                        </tr>
+                        <tr>
+                            <td> Economic </td>
+                            <td> Premium </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> 130 lei </td>
+                            <td class="bottomright"> 195 lei </td>
+                        </tr>
+                    </table>
+                    <button class="box" onclick="opriri(5)"> Opriri </button>
+                </div>
+                <table class="opriri-tren" id="tren5">
+                    <tr>
+                        <td> Zürich Hb </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Bregenz </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Memmingen </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> München Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Salzburg Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Linz Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Wien Hbf </td>
+                    </tr>
+                    <tr>
+                        <td class="empty"> 14:00 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 15:29 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 16:31 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 17:33 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 19:13 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 20:23 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 21:38 </td>
+                    </tr>
+                </table>
+                <div class="container">
+                    <table class="info-tren">
+                        <tr>
+                            <td class="topleft"> Plecare la </td>
+                            <td> SR803 </td>
+                            <td class="topright"> Sosire la </td>
+                        </tr>
+                        <tr>
+                            <td> 22:00 </td>
+                            <td> 7h 38m </td>
+                            <td> 05:38 (+1 zi) </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> Zürich Hb </td>
+                            <td> L - D </td>
+                            <td class="bottomright"> Wien Hbf </td>
+                        </tr>
+                    </table>
+                    <table class="pret-tren col3">
+                        <tr>
+                            <td class="top" colspan="3"> Preț întreg bilet </td>
+                        </tr>
+                        <tr>
+                            <td> Economic </td>
+                            <td> Premium </td>
+                            <td> Night </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> 130 lei </td>
+                            <td> 195 lei </td>
+                            <td class="bottomright"> 195 lei </td>
+                        </tr>
+                    </table>
+                    <button class="box" onclick="opriri(6)"> Opriri </button>
+                </div>
+                <table class="opriri-tren" id="tren6">
+                    <tr>
+                        <td> Zürich Hb </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Bregenz </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Memmingen </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> München Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Salzburg Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Linz Hbf </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Wien Hbf </td>
+                    </tr>
+                    <tr>
+                        <td class="empty"> 22:00 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 23:29 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 00:31 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 01:33 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 03:13 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 04:23 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 05:38 </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="fus-orar">
+                <h3> Toate orele sunt precizate conform fusului orar local! </h3>
+            </section>
+        </main>
+        <footer>
+            <section id="contact">
+                <h3> Date de contact </h3>
+                Luni - Vineri:  09:00-17:00 <br>
+                Email: <a href="mailto:"> info@swiftrail.com </a> <br>
+                Telefon: <a href="tel:"> 0712 345 678 </a> <br>
+                Adresă: Str. Panseluței, Nr. 28, Sector 1, București, România
+            </section>
+            <section id="rights">
+                &copy; SwiftRail SRL <br>
+                Autor: Chircu Andrei-Denis
+            </section>
+        </footer>
+        <script>
+            function menu()
+            {
+                var x = document.getElementById("mobile-nav");
+                if (x.style.display === "flex")
+                    x.style.display = "none";
+                else
+                    x.style.display = "flex";
+            }
+            function opriri(nr)
+            {
+                var x = document.getElementById(`tren${nr}`);
+                if (x.style.display === "block")
+                    x.style.display = "none";
+                else
+                    x.style.display = "block";
+            }
+        </script>
+    </body>
+</html>

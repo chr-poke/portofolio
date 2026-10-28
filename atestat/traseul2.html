@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Traseul 2 </title>
+        <link rel="icon" type="image/png" href="materiale/icon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html#"> <div id="logo"> SwiftRail </div> </a>
+            <ul id="nav">
+                <a href="index.html#trasee" title="Vezi traseele noastre"> <li> Trasee </li> </a>
+                <a href="index.html#anunturi" title="Află despre cele mai noi defecțiuni, întârzieri sau alte informații importante"> <li> Anunțuri </li> </a>
+                <a href="index.html#servicii" title="Află despre condițiile din tren"> <li> Servicii </li> </a>
+                <a href="index.html#faq" title="Vezi secțiunea de întrebări frecvente"> <li> FAQ </li> </a>
+                <a href="index.html#about" title="Află mai multe despre noi"> <li> Despre noi </li> </a>
+            </ul>
+            <button id="menu-icon" onclick="menu()"> <img src="materiale/menu.svg" alt="meniu"> </button>
+            <ul id="mobile-nav">
+                <a onclick="menu()" href="index.html#trasee" title="Vezi traseele noastre"> <li> Trasee </li> </a>
+                <a onclick="menu()" href="index.html#anunturi" title="Află despre cele mai noi defecțiuni, întârzieri sau alte informații importante"> <li> Anunțuri </li> </a>
+                <a onclick="menu()" href="index.html#servicii" title="Află despre condițiile din tren"> <li> Servicii </li> </a>
+                <a onclick="menu()" href="index.html#faq" title="Vezi secțiunea de întrebări frecvente"> <li> FAQ </li> </a>
+                <a onclick="menu()" href="index.html#about" title="Află mai multe despre noi"> <li> Despre noi </li> </a>
+            </ul>
+        </header>
+        <main>
+            <section class="sens-tren">
+                <h2> Budapesta - Belgrad - Sofia </h2>
+                <div class="container">
+                    <table class="info-tren">
+                        <tr>
+                            <td class="topleft"> Plecare la </td>
+                            <td> SR303 </td>
+                            <td class="topright"> Sosire la </td>
+                        </tr>
+                        <tr>
+                            <td> 08:00 </td>
+                            <td> 13h 37m </td>
+                            <td> 22:37 </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> Budapest-Nyugati </td>
+                            <td> L - D </td>
+                            <td class="bottomright"> Sofia </td>
+                        </tr>
+                    </table>
+                    <table class="pret-tren col2">
+                        <tr>
+                            <td class="top" colspan="2"> Preț întreg bilet </td>
+                        </tr>
+                        <tr>
+                            <td> Economic </td>
+                            <td> Premium </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> 160 lei </td>
+                            <td class="bottomright"> 240 lei </td>
+                        </tr>
+                    </table>
+                    <button class="box" onclick="opriri(1)"> Opriri </button>
+                </div>
+                <table class="opriri-tren" id="tren1">
+                    <tr>
+                        <td> Budapest-Nyugati </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Kecskemét </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Szeged </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Subotica </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Novi Sad </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Beograd Centar </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Niš </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Dimitrovgrad </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Sofia </td>
+                    </tr>
+                    <tr>
+                        <td class="empty"> 08:00 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 09:20 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 10:10 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 11:32 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 12:24 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 13:09 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 17:31 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 19:41 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 22:37 </td>
+                    </tr>
+                </table>
+                <div class="container">
+                    <table class="info-tren">
+                        <tr>
+                            <td class="topleft"> Plecare la </td>
+                            <td> SR304 </td>
+                            <td class="topright"> Sosire la </td>
+                        </tr>
+                        <tr>
+                            <td> 18:00 </td>
+                            <td> 13h 37m </td>
+                            <td> 08:37 (+1 zi) </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> Budapest-Nyugati </td>
+                            <td> L - D </td>
+                            <td class="bottomright"> Sofia </td>
+                        </tr>
+                    </table>
+                    <table class="pret-tren col3">
+                        <tr>
+                            <td class="top" colspan="3"> Preț întreg bilet </td>
+                        </tr>
+                        <tr>
+                            <td> Economic </td>
+                            <td> Premium </td>
+                            <td> Night </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> 160 lei </td>
+                            <td> 240 lei </td>
+                            <td class="bottomright"> 240 lei </td>
+                        </tr>
+                    </table>
+                    <button class="box" onclick="opriri(2)"> Opriri </button>
+                </div>
+                <table class="opriri-tren" id="tren2">
+                    <tr>
+                        <td> Budapest-Nyugati </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Kecskemét </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Szeged </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Subotica </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Novi Sad </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Beograd Centar </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Niš </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Dimitrovgrad </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Sofia </td>
+                    </tr>
+                    <tr>
+                        <td class="empty"> 18:00 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 19:20 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 20:10 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 21:32 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 22:24 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 23:09 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 03:31 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 05:41 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 08:37 </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="sens-tren">
+                <h2> Sofia - Belgrad - Budapesta </h2>
+                <div class="container">
+                    <table class="info-tren">
+                        <tr>
+                            <td class="topleft"> Plecare la </td>
+                            <td> SR401 </td>
+                            <td class="topright"> Sosire la </td>
+                        </tr>
+                        <tr>
+                            <td> 08:00 </td>
+                            <td> 13h 37m </td>
+                            <td> 20:37 </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> Sofia </td>
+                            <td> L - D </td>
+                            <td class="bottomright"> Budapest-Nyugati </td>
+                        </tr>
+                    </table>
+                    <table class="pret-tren col2">
+                        <tr>
+                            <td class="top" colspan="2"> Preț întreg bilet </td>
+                        </tr>
+                        <tr>
+                            <td> Economic </td>
+                            <td> Premium </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> 160 lei </td>
+                            <td class="bottomright"> 240 lei </td>
+                        </tr>
+                    </table>
+                    <button class="box" onclick="opriri(3)"> Opriri </button>
+                </div>
+                <table class="opriri-tren" id="tren3">
+                    <tr>
+                        <td> Sofia </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Dimitrovgrad </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Niš </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Beograd Centar </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Novi Sad </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Subotica </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Szeged </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Kecskemét </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Budapest-Nyugati </td>
+                    </tr>
+                    <tr>
+                        <td class="empty"> 08:00 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 08:56 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 11:06 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 15:28 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 16:13 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 17:05 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 18:27 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 19:17 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 20:37 </td>
+                    </tr>
+                </table>
+                <div class="container">
+                    <table class="info-tren">
+                        <tr>
+                            <td class="topleft"> Plecare la </td>
+                            <td> SR402 </td>
+                            <td class="topright"> Sosire la </td>
+                        </tr>
+                        <tr>
+                            <td> 18:00 </td>
+                            <td> 13h 37m </td>
+                            <td> 06:37 (+1 zi) </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> Sofia </td>
+                            <td> L - D </td>
+                            <td class="bottomright"> Budapest-Nyugati </td>
+                        </tr>
+                    </table>
+                    <table class="pret-tren col3">
+                        <tr>
+                            <td class="top" colspan="3"> Preț întreg bilet </td>
+                        </tr>
+                        <tr>
+                            <td> Economic </td>
+                            <td> Premium </td>
+                            <td> Night </td>
+                        </tr>
+                        <tr>
+                            <td class="bottomleft"> 160 lei </td>
+                            <td> 240 lei </td>
+                            <td class="bottomright"> 240 lei </td>
+                        </tr>
+                    </table>
+                    <button class="box" onclick="opriri(4)"> Opriri </button>
+                </div>
+                <table class="opriri-tren" id="tren4">
+                    <tr>
+                        <td> Sofia </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Dimitrovgrad </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Niš </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Beograd Centar </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Novi Sad </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Subotica </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Szeged </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Kecskemét </td>
+                        <td class="arrow empty"> <img src="materiale/arrow.svg"> </td>
+                        <td> Budapest-Nyugati </td>
+                    </tr>
+                    <tr>
+                        <td class="empty"> 18:00 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 18:56 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 21:06 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 01:28 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 02:13 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 03:05 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 04:27 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 05:17 </td>
+                        <td class="empty"> </td>
+                        <td class="empty"> 06:37 </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="fus-orar">
+                <h3> Toate orele sunt precizate conform fusului orar local! </h3>
+            </section>
+        </main>
+        <footer>
+            <section id="contact">
+                <h3> Date de contact </h3>
+                Luni - Vineri:  09:00-17:00 <br>
+                Email: <a href="mailto:"> info@swiftrail.com </a> <br>
+                Telefon: <a href="tel:"> 0712 345 678 </a> <br>
+                Adresă: Str. Panseluței, Nr. 28, Sector 1, București, România
+            </section>
+            <section id="rights">
+                &copy; SwiftRail SRL <br>
+                Autor: Chircu Andrei-Denis
+            </section>
+        </footer>
+        <script>
+            function menu()
+            {
+                var x = document.getElementById("mobile-nav");
+                if (x.style.display === "flex")
+                    x.style.display = "none";
+                else
+                    x.style.display = "flex";
+            }
+            function opriri(nr)
+            {
+                var x = document.getElementById(`tren${nr}`);
+                if (x.style.display === "block")
+                    x.style.display = "none";
+                else
+                    x.style.display = "block";
+            }
+        </script>
+    </body>
+</html>

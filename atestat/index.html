@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> SwiftRail </title>
+        <link rel="icon" type="image/png" href="materiale/icon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#"> <div id="logo"> SwiftRail </div> </a>
+            <ul id="nav">
+                <a href="#trasee" title="Vezi traseele noastre"> <li> Trasee </li> </a>
+                <a href="#anunturi" title="Află despre cele mai noi defecțiuni, întârzieri sau alte informații importante"> <li> Anunțuri </li> </a>
+                <a href="#servicii" title="Află despre condițiile din tren"> <li> Servicii </li> </a>
+                <a href="#faq" title="Vezi secțiunea de întrebări frecvente"> <li> FAQ </li> </a>
+                <a href="#about" title="Află mai multe despre noi"> <li> Despre noi </li> </a>
+            </ul>
+            <button id="menu-icon" onclick="menu()"> <img src="materiale/menu.svg" alt="meniu"> </button>
+            <ul id="mobile-nav">
+                <a onclick="menu()" href="#trasee" title="Vezi traseele noastre"> <li> Trasee </li> </a>
+                <a onclick="menu()" href="#anunturi" title="Află despre cele mai noi defecțiuni, întârzieri sau alte informații importante"> <li> Anunțuri </li> </a>
+                <a onclick="menu()" href="#servicii" title="Află despre condițiile din tren"> <li> Servicii </li> </a>
+                <a onclick="menu()" href="#faq" title="Vezi secțiunea de întrebări frecvente"> <li> FAQ </li> </a>
+                <a onclick="menu()" href="#about" title="Află mai multe despre noi"> <li> Despre noi </li> </a>
+            </ul>
+        </header>
+        <main>
+            <section id="trasee">
+                <h2> Trasee </h2>
+                <div class="container">
+                    <a id="harta" href="https://arcg.is/DKOPf0" target="_blank"> <img id="harta-img" src="materiale/harta.png" alt="harta"> </a>
+                    <ul id="links-trasee">
+                        <a id="traseul1" class="box" onmouseover="changeMap('hsl(0, 60%, 50%)', 'materiale/traseul1.png')"
+                        onmouseout="changeMap('black', 'materiale/harta.png')" href="traseul1.html"> <li> Traseul 1: București - Cluj-Napoca - Budapesta </li> </a>
+                        <a id="traseul2" class="box" onmouseover="changeMap('hsl(25, 60%, 50%)', 'materiale/traseul2.png')"
+                        onmouseout="changeMap('black', 'materiale/harta.png')" href="traseul2.html"> <li> Traseul 2: Sofia - Belgrad - Budapesta </li> </a>
+                        <a id="traseul3" class="box" onmouseover="changeMap('hsl(57, 60%, 50%)', 'materiale/traseul3.png')"
+                        onmouseout="changeMap('black', 'materiale/harta.png')" href="traseul3.html"> <li> Traseul 3: Zagreb - Viena - Budapesta </li> </a>
+                        <a id="traseul4" class="box" onmouseover="changeMap('hsl(130, 60%, 50%)', 'materiale/traseul4.png')"
+                        onmouseout="changeMap('black', 'materiale/harta.png')" href="traseul4.html"> <li> Traseul 4: Varșovia - Bratislava - Budapesta </li> </a>
+                        <a id="traseul5" class="box" onmouseover="changeMap('hsl(230, 60%, 50%)', 'materiale/traseul5.png')"
+                        onmouseout="changeMap('black', 'materiale/harta.png')" href="traseul5.html"> <li> Traseul 5: Berlin - Praga - Viena </li> </a>
+                        <a id="traseul6" class="box" onmouseover="changeMap('hsl(290, 60%, 50%)', 'materiale/traseul6.png')"
+                        onmouseout="changeMap('black', 'materiale/harta.png')" href="traseul6.html"> <li> Traseul 6: Zürich - München - Viena </li> </a>
+                    </ul>
+                </div>
+            </section>
+            <section id="anunturi">
+                <h2> Anunțuri </h2>
+                <ul class="container">
+                    <p class="box">
+                        Stimați călători, <br> <br>
+                        Vă informăm că trenurile <b> SR201 și SR202 (ruta București - Cluj-Napoca - Budapesta), </b>
+                        respectiv <b> SR301 și SR302 (ruta Budapesta - Cluj-Napoca - București) </b>
+                        nu vor circula în perioada <b> 17.05.2025 - 18.05.2025 </b> datorită unor defecțiuni tehnice. 
+                        Ne cerem scuze pentru inconveniențe!
+                    </p>
+                    <p class="box">
+                        Stimați călători, <br> <br>
+                        Vă informăm că trenul <b> SR305 (ruta Budapesta - Bratislava - Varșovia) </b>
+                        de astăzi, 16.05.2025, se va opri pentru o oră în <b> Břeclav </b> pentru efectuarea unor reparații. 
+                        Ne cerem scuze pentru inconveniențe!
+                    </p>
+                </ul>
+            </section>
+            <section id="servicii">
+                <h2> Servicii </h2>
+                <p>
+                    SwiftRail vă pune la dispoziție 3 clase de confort pentru o experiență pe bunul plac al tuturor, la prețuri accesibile:
+                </p>
+                <table id="tabel">
+                    <tr>
+                        <th class="topleft"> Premium </th>
+                        <th> Economic </th>
+                        <th class="topright"> Night </th>
+                    </tr>
+                    <tr>
+                        <td> <ul>
+                            <li> Anulare/Schimbare gratuită a biletelor </li>
+                            <li> Rezervarea locurilor </li>
+                            <li> Prioritate la îmbarcare </li>
+                            <li> Locuri amenajate pentru 1-4 persoane </li>
+                            <li> Spațiu de depozitare </li>
+                            <li> Prize individuale </li>
+                            <li> Toaletă </li>
+                            <li> Aer condiționat </li>
+                            <li> Wi-Fi rapid gratuit </li>
+                            <li> Gustări și băuturi gratuite </li>
+                        </ul> </td>
+                        <td> <ul>
+                            <li> Rezervarea locurilor </li>
+                            <li> Locuri amenajate pentru 2/4 persoane </li>
+                            <li> Spațiu de depozitare </li>
+                            <li> Prize la comun </li>
+                            <li> Toaletă </li>
+                            <li> Aer condiționat </li>
+                            <li> Wi-Fi gratuit </li>
+                        </ul> </td>
+                        <td> <ul>
+                            <li> Rezervarea locurilor </li>
+                            <li> Compartimente pentru dormit (2/4 persoane) </li>
+                            <li> Spațiu de depozitare </li>
+                            <li> Prize individuale </li>
+                            <li> Toaletă privată </li>
+                            <li> Aer condiționat </li>
+                            <li> Wi-Fi gratuit </li>
+                        </ul> </td>
+                    </tr>
+                    <tr>
+                        <td class="foto bottomleft"> <a href="materiale/premium.png" target="_blank"> <img src="materiale/premium.png" alt="interior premium"> </a> </td>
+                        <td class="foto"> <a href="materiale/economic.jpg" target="_blank"> <img src="materiale/economic.jpg" alt="interior economic"> </a> </td>
+                        <td class="foto bottomright"> <a href="materiale/night.jpg" target="_blank"> <img src="materiale/night.jpg" alt="interior night"> </a> </td>
+                    </tr>
+                </table>
+                <table class="mobile-tabel">
+                    <tr>
+                        <th class="top"> Premium </th>
+                    </tr>
+                    <tr>
+                        <td> <ul>
+                            <li> Anulare/Schimbare gratuită a biletelor </li>
+                            <li> Rezervarea locurilor </li>
+                            <li> Prioritate la îmbarcare </li>
+                            <li> Locuri amenajate pentru 1-4 persoane </li>
+                            <li> Spațiu de depozitare </li>
+                            <li> Prize individuale </li>
+                            <li> Toaletă </li>
+                            <li> Aer condiționat </li>
+                            <li> Wi-Fi rapid gratuit </li>
+                            <li> Gustări și băuturi gratuite </li>
+                        </ul> </td>
+                    </tr>
+                    <tr>
+                        <td class="foto bottom"> <img src="materiale/premium.png" alt="interior premium"> </td>
+                    </tr>
+                </table>
+                <table class="mobile-tabel">
+                    <tr>
+                        <th class="top"> Economic </th>
+                    </tr>
+                    <tr>
+                        <td> <ul>
+                            <li> Rezervarea locurilor </li>
+                            <li> Locuri amenajate pentru 2/4 persoane </li>
+                            <li> Spațiu de depozitare </li>
+                            <li> Prize la comun </li>
+                            <li> Toaletă </li>
+                            <li> Aer condiționat </li>
+                            <li> Wi-Fi gratuit </li>
+                        </ul> </td>
+                    </tr>
+                    <tr>
+                        <td class="foto bottom"> <img src="materiale/economic.jpg" alt="interior economic"> </td>
+                    </tr>
+                </table>
+                <table class="mobile-tabel">
+                    <tr>
+                        <th class="top"> Night </th>
+                    </tr>
+                    <tr>
+                        <td> <ul>
+                            <li> Rezervarea locurilor </li>
+                            <li> Compartimente pentru dormit (2/4 persoane) </li>
+                            <li> Spațiu de depozitare </li>
+                            <li> Prize individuale </li>
+                            <li> Toaletă privată </li>
+                            <li> Aer condiționat </li>
+                            <li> Wi-Fi gratuit </li>
+                        </ul> </td>
+                    </tr>
+                    <tr>
+                        <td class="foto bottom"> <img src="materiale/night.jpg" alt="interior night"> </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="faq">
+                <h2>Întrebări frecvente</h2>
+                <table>
+                    <tr> <td class="q top" id="q1" onclick="answer(1)"> De unde pot cumpăra un bilet? </td> </tr>
+                    <tr class="a" id="a1"> <td> Biletele se pot achiziționa de la casele de bilete
+                        din gările noastre partenere sau contactându-ne printr-un <a href="tel:">apel telefonic</a>. </td> </tr>
+                    <tr> <td class="q" id="q2" onclick="answer(2)"> Cu cât timp în avans pot cumpăra un bilet? </td> </tr>
+                    <tr class="a" id="a2"> <td> Biletele sunt disponibile cu până la 6 luni în avans,
+                        în funcție de ruta aleasă și de partenerii internaționali. </td> </tr>
+                    <tr> <td class="q" id="q3" onclick="answer(3)"> Sunt necesare documente speciale pentru călătoriile internaționale? </td> </tr>
+                    <tr class="a" id="a3"> <td> Da, este necesar un act de identitate valabil. Pentru unele țări,
+                        este posibil să aveți nevoie de pașaport sau viză, în funcție de cetățenia dumneavoastră.
+                        Vă rugăm să consultați reglementările specifice fiecărei țări în care plănuiți să călătoriți! </td> </tr>
+                    <tr> <td class="q" id="q4" onclick="answer(4)"> Pot călători cu un permis Interrail? </td> </tr>
+                    <tr class="a" id="a4"> <td> Da, acceptăm aceste tipuri de abonamente pe toate rutele.
+                        Este posibil să fie nevoie de rezervare suplimentară pentru loc. </td> </tr>
+                    <tr> <td class="q" id="q5" onclick="answer(5)"> Pot călători cu bicicleta? </td> </tr>
+                    <tr class="a" id="a5"> <td> Da, bicicletele sunt permise în toate trenurile,
+                        dar trebuie lăsate în locul special amenajat pe parcursul călătoriei. </td> </tr>
+                    <tr> <td class="q" id="q6" onclick="answer(6)"> Sunt permise animalele de companie? </td> </tr>
+                    <tr class="a" id="a6"> <td> Da, animalele mici sunt permise în cușcă, gratuit.
+                        Pentru câinii mari este necesar un bilet separat și botniță. </td> </tr>
+                    <tr> <td class="q" id="q7" onclick="answer(7)"> Ce fac dacă trenul meu întârzie? </td> </tr>
+                    <tr class="a" id="a7"> <td> În această situație vă rugăm să nu vă panicațî,
+                        să consultați secțiunea <a href="#anunturi">Anunțuri</a> de pe site-ul nostru sau să ne contactați pentru explicații.
+                        În cazul întârzierilor de peste 60 de minute, puteți solicita rambursarea parțială a biletului
+                        prin <a href="mailto:">e-mail</a>. </td> </tr>
+                    <tr> <td class="q bottom" id="q8" onclick="answer(8)"> Ce facilități sunt disponibile pentru persoanele cu mobilitate redusă? </td> </tr>
+                    <tr class="a" id="a8"> <td class="bottom"> Trenurile noastre sunt echipate pentru a oferi acces facil persoanelor cu dizabilități.
+                        Vă recomandăm să ne anunțați în avans pentru asistență personalizată. </td> </tr>
+                </table>
+            </section>
+            <section id="about">
+                <h2>Despre noi</h2>
+                <ul class="container">
+                    <li class="box">
+                        <h3> Ce este SwiftRail? </h3>
+                        <p>
+                            SwiftRail este un operator feroviar internațional privat
+                            <b> dedicat conectării Sud-Estului Europei cu inima continentului - Europa Centrală - </b>
+                            prin servicii moderne, rapide și sustenabile.
+                        </p>
+                        <p>
+                            Misiunea noastră este simplă, dar ambițioasă: să oferim
+                            <b> o alternativă de transport sigură, confortabilă și prietenoasă cu mediul, </b>
+                            pentru toți cei care doresc să călătorească eficient peste granițe.
+                        </p>
+                    </li>
+                    <li class="box">
+                        <h3> Conectăm Europa, protejând planeta </h3>
+                        <p>
+                            Într-o lume în continuă mișcare, credem că mobilitatea nu trebuie să vină în detrimentul mediului.
+                        </p>
+                        <p>
+                            De aceea, toate trenurile noastre sunt <b> 100% electrice, </b>
+                            alimentate din surse de <b> energie verde </b> acolo unde este posibil.
+                        </p>
+                        <p>
+                            Investim constant în tehnologii de ultimă generație
+                            <b> pentru a reduce amprenta de carbon </b>
+                            și pentru a transforma călătoria cu trenul în cea mai ecologică opțiune de transport internațional.
+                        </p>
+                    </li>
+                    <li class="box">
+                        <h3> Modern. Rapid. Confortabil. </h3>
+                        <p>
+                            Trenurile SwiftRail sunt gândite pentru a oferi o experiență de <b> călătorie fluidă, </b>
+                            fie că mergeți din Balcani spre Viena, Budapesta sau Berlin, fie că veniți din Europa Centrală spre orașe-cheie din Sud-Estul Europei.
+                        </p>
+                        <p>
+                            Cu conexiuni inteligente, Wi-Fi la bord, spații ergonomice și servicii adaptate călătorilor moderni,
+                            <b> transformăm fiecare drum într-o destinație în sine. </b>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <section id="contact">
+                <h3> Date de contact </h3>
+                Luni - Vineri:  09:00-17:00 <br>
+                Email: <a href="mailto:"> info@swiftrail.com </a> <br>
+                Telefon: <a href="tel:"> 0712 345 678 </a> <br>
+                Adresă: Str. Panseluței, Nr. 28, Sector 1, București, România
+            </section>
+            <section id="rights">
+                &copy; SwiftRail SRL <br>
+                Autor: Chircu Andrei-Denis
+            </section>
+        </footer>
+        <script>
+            function menu()
+            {
+                var x = document.getElementById("mobile-nav");
+                if (x.style.display === "flex")
+                    x.style.display = "none";
+                else
+                    x.style.display = "flex";
+            }
+            function changeColor(color)
+            {
+                document.getElementById("harta-img").style.borderColor = color;
+            }
+            function changeSRC(source)
+            {
+                document.getElementById("harta-img").src = source;
+            }
+            function changeMap(color, source)
+            {
+                changeColor(color);
+                changeSRC(source);
+            }
+            function answer(q)
+            {
+                var x = document.getElementById(`a${q}`);
+                var y = document.getElementById(`q${q}`);
+                if (x.style.display === "table-row")
+                {
+                    x.style.display = "none";
+                    y.style.listStyleType = "disclosure-closed";
+                }
+                else
+                {
+                    x.style.display = "table-row";
+                    y.style.listStyleType = "disclosure-open";
+                }
+                if (q===8 && x.style.display === "table-row")
+                {
+                    y.style.borderBottomLeftRadius = "0px";
+                    y.style.borderBottomRightRadius = "0px";
+                }
+                else if (q===8)
+                {
+                    y.style.borderBottomLeftRadius = "12px";
+                    y.style.borderBottomRightRadius = "12px";
+                }
+            }
+        </script>
+    </body>
+</html>

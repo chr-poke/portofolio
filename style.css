@@ -1,0 +1,93 @@
+* {
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    color: #474e23;
+    background-color: #f3ffda;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    margin-bottom: 4rem;
+    border-bottom: 3px solid #474e23;
+    padding-bottom: 1rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #474e23;
+}
+
+h3 {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #D16014;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #D16014;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.project {
+    margin: 2rem 0rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.project img {
+    float: left;
+    margin-right: 2em;
+    height: auto;
+    display: block;
+    border-radius: 2%;
+    border: 3px solid #D16014;
+}
+
+.proj_info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+a {
+    color: #D16014;
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Chișinău </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"> </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Girassol&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="materiale/favicon.ico">
+    </head>
+    <body>
+        <div id="backdrop">
+            <dialog id="formDialog" closedby="any" tabindex="-1" aria-label="Formular pentru programarea unei vizite la Parlamentul Republicii Moldova">
+                <button id="closeFormButton">
+                    <canvas id="close" width="24" height="24"></canvas>
+                </button>
+                <h2> Formular de programare </h2>
+                <form target="_self" method="get">
+                    <label for="nume">
+                        Nume complet:
+                        <input id="nume" type="text" name="nume" min="3" max="30" required>
+                    </label>
+                    <label for="email">
+                        Adresă de e-mail:
+                        <input id="email" type="text" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </label>
+                    <label for="telefon">
+                        Telefon:
+                        <input id="telefon" type="tel" name="telefon" pattern="(\+40+[0-9]{9})|(\+373+[0-9]{8})" placeholder="+373... sau +40..." required>
+                    </label>
+                    <label for="data">
+                        Data:
+                        <input id="data" type="date" name="data" required>
+                    </label>
+                    <label for="ora">
+                        Orele:
+                        <select id="ora" name="ora" required>
+                            <option value="09:00 - 10:00"> 09:00 - 10:00 </option>
+                            <option value="10:00 - 11:00"> 10:00 - 11:00 </option>
+                            <option value="14:00 - 15:00"> 14:00 - 15:00 </option>
+                            <option value="15:00 - 16:00"> 15:00 - 16:00 </option>
+                        </select>
+                    </label>
+                    <label for="nr_vizitatori">
+                        Număr vizitatori:
+                        <input id="nr_vizitatori" type="number" name="nr_vizitatori" min="5" max="35" required>
+                    </label>
+                    <label for="lista">
+                        Lista vizitatorilor:
+                        <textarea id="lista" name="lista" rows="5" cols="40" required></textarea>
+                    </label>
+                    <div> </div>
+                    <button id="submit" type="submit"> Trimite </button>
+                </form>
+            </dialog>
+        </div>
+        <header>
+            <a href="#"> <h1> Chișinău </h1> </a>
+            <nav id="side_nav">
+                <h3> Cuprins: </h3>
+                <a href="#despre_chisinau"> Despre Chișinău </a>
+                <a href="#monumente"> Monumente </a>
+                <ul>
+                    <li> <a href="#arcul_de_triumf"> Arcul de Triumf </a> </li>
+                    <li> <a href="#parlamentul_republicii_moldova"> Parlamentul Republicii Moldova </a> </li>
+                </ul>
+                <a href="#parcuri"> Parcuri </a>
+                <ul>
+                    <li> <a href="#parcul_valea_morilor"> Parcul „Valea Morilor” </a> </li>
+                    <li> <a href="#gradina_publica_stefan_cel_mare_si_sfant"> Grădină Publică Ștefan cel Mare și Sfânt </a> </li>
+                </ul>
+                <a href="#muzee"> Muzee </a>
+                <ul>
+                    <li> <a href="#muzeul_national_de_istorie_a_moldovei"> Muzeul Național de Istorie a Moldovei </a> </li>
+                    <li> <a href="#muzeul_national_de_arta_al_moldovei"> Muzeul Național de Artă al Moldovei </a> </li>
+                </ul>
+                <a href="#biserici"> Biserici </a>
+                <ul>
+                    <li> <a href="#catedrala_mitropolitana_nasterea_domnului"> Catedrala Mitropolitană „Nașterea Domnului” </a> </li>
+                    <li> <a href="#biserica_mazarache"> Biserica Măzărache </a> </li>
+                </ul>
+            </nav>
+            <button id="menu" class="menu_click" tabindex="0"> Cuprins </button>
+            <dialog id="mobile_nav" closedby="any" tabindex="-1" aria-label="Meniu de navigare a secțiunilor">
+                <a href="#despre_chisinau" class="menu_click"> Despre Chișinău </a>
+                <a href="#monumente" class="menu_click"> Monumente </a>
+                <ul>
+                    <li> <a href="#arcul_de_triumf" class="menu_click"> Arcul de Triumf </a> </li>
+                    <li> <a href="#parlamentul_republicii_moldova" class="menu_click"> Parlamentul Republicii Moldova </a> </li>
+                </ul>
+                <a href="#parcuri" class="menu_click"> Parcuri </a>
+                <ul>
+                    <li> <a href="#parcul_valea_morilor" class="menu_click"> Parcul „Valea Morilor” </a> </li>
+                    <li> <a href="#gradina_publica_stefan_cel_mare_si_sfant" class="menu_click"> Grădină Publică Ștefan cel Mare și Sfânt </a> </li>
+                </ul>
+                <a href="#muzee" class="menu_click"> Muzee </a>
+                <ul>
+                    <li> <a href="#muzeul_national_de_istorie_a_moldovei" class="menu_click"> Muzeul Național de Istorie a Moldovei </a> </li>
+                    <li> <a href="#muzeul_national_de_arta_al_moldovei" class="menu_click"> Muzeul Național de Artă al Moldovei </a> </li>
+                </ul>
+                <a href="#biserici" class="menu_click"> Biserici </a>
+                <ul>
+                    <li> <a href="#catedrala_mitropolitana_nasterea_domnului" class="menu_click"> Catedrala Mitropolitană „Nașterea Domnului” </a> </li>
+                    <li> <a href="#biserica_mazarache" class="menu_click"> Biserica Măzărache </a> </li>
+                </ul>
+            </dialog>
+        </header>
+        <main>
+            <article id="despre_chisinau">
+                <h2> Despre Chișinău </h2>
+                <p> Chișinăul este un oraș metropolitan și capitala Moldovei și este bogat în moșteniri culturale variate. </p>
+                <p> Chișinăul găzduiește câteva muzee istorice renumite, biserici vechi, parcuri verzi luxuriante și localuri
+                    culinare încântătoare. Delicatesele alimentare și vinurile de la Chișinău sunt unele dintre cele mai discutate
+                    lucruri din întreaga Europă și reprezintă un factor major de atragere a turiștilor. </p>
+                <p> Localnicii acestui loc sunt atât de primitori încât oricând ați dori să veniți din nou. </p>
+            </article>
+            <div id="obiective_turistice">
+                <a href="#monumente" aria-label="Sari la secțiunea Monumente">
+                    <figure>
+                        <div class="rombus"> <img src="materiale/monumente.jpg" alt="Monumente"> </div>
+                        <figcaption> <h3> Monumente </h3> </figcaption>
+                    </figure>
+                </a>
+                <a href="#parcuri" aria-label="Sari la secțiunea Parcuri">
+                    <figure>
+                        <div class="rombus"> <img src="materiale/parcuri.jpg" alt="Parcuri"> </div>
+                        <figcaption> <h3> Parcuri </h3> </figcaption>
+                    </figure>
+                </a>
+                <a href="#muzee" aria-label="Sari la secțiunea Muzee">
+                    <figure>
+                        <div class="rombus"> <img src="materiale/muzee.jpg" alt="Muzee"> </div>
+                        <figcaption> <h3> Muzee </h3> </figcaption>
+                    </figure>
+                </a>
+                <a href="#biserici" aria-label="Sari la secțiunea Biserici">
+                    <figure>
+                        <div class="rombus"> <img src="materiale/biserici.jpg" alt="Biserici"> </div>
+                        <figcaption> <h3> Biserici </h3> </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <section id="monumente">
+                <h2> Monumente </h2>
+                <article id="arcul_de_triumf">
+                    <h3> Arcul de Triumf </h3>
+                    <figure>
+                        <img src="materiale/arcul_de_triumf.jpg" alt="Arcul de Triumf">
+                        <figcaption class="hiddenCaptions"> Arcul de Triumf </figcaption>
+                    </figure>
+                    <p> Numit și „Porțile Sfinte”, iar sub regimul sovietic „Arcul Victoriei”, Arcul de Triumf din Chișinău reprezintă
+                        un monument de arhitectură comemorativ al biruințelor armatei rusești în fața trupelor otomane în războiul
+                        dintre 1806-1812. </p>
+                    <p> Aflat pe bd. Ștefan cel Mare și Sfânt, arcul face parte dintr-un ansamblu arhitectural care unește printr-o axă de
+                        simetrie Catedrala Nașterii Domnului și clopotnița acesteia, Piața Marii Adunări Naționale și Casa Guvernului din
+                        Chișinău. </p>
+                    <p> Construit în 1841 după proiectul arhitectului-șef Luca Zaușkevici, ca bază fiind luat proiectul Arcului de Triumf
+                        din Roma, monumentul are în plan formă de pătrat, cu structuri arhitecturale ce se îmbină armonios, și o înălțime
+                        de 13 m. </p>
+                    <p> Primul nivel, reprezentat de cei 4 piloni, este sculptat în stil corintic, iar nivelul superior este decorat în
+                        stil clasic, având montat pe partea frontală un orologiu mecanic, luminat pe timp de noapte. În interiorul arcului
+                        se află un clopot care a fost turnat din metalul tunurilor turcești capturate în război. </p>
+                </article>
+                <article id="parlamentul_republicii_moldova">
+                    <h3> Parlamentul Republicii Moldova </h3>
+                    <figure>
+                        <img src="materiale/parlamentul_republicii_moldova.jpg" alt="Parlamentul Republicii Moldova">
+                        <figcaption class="hiddenCaptions"> Parlamentul Republicii Moldova </figcaption>
+                    </figure>
+                    <p> Arhitectura Palatului Parlamentului din Chișinau este foarte deosebită și interesantă. Clădirea are forma unei carți
+                        deschise iar în centru, unde „foile cărții” se unesc, sunt patru piloni care au aceeași înalțime ca și clădirea. </p>
+                    <p> Clădirea Parlamentului Republicii Moldova a fost ridicată în anii 70, la început avănd ca scop deservirea Comitetului
+                        Central al Partidului Comunist al RSSM. </p>
+                    <p> Pe soclul clădirii sunt plite din granit roșu, suprafețele zidurilor fiind acoperite cu plite de piatră roz.
+                        Cabinetele de lucru, în interior, sunt așezate într-o singură aripă a clădirii, iar sala de ședinte a Parlamentului
+                        se află în partea opusă. </p>
+                    <p> Palatul Parlamentului este un monument de importanță națională. </p>
+                </article>
+            </section>
+            <section id="parcuri">
+                <h2> Parcuri </h2>
+                <article id="parcul_valea_morilor">
+                    <h3> Parcul „Valea Morilor” </h3>
+                    <figure>
+                        <img src="materiale/parcul_valea_morilor.jpg" alt="Parcul „Valea Morilor”">
+                        <figcaption class="hiddenCaptions"> Parcul „Valea Morilor” </figcaption>
+                    </figure>
+                    <p> Parcul „Valea Morilor” și lacul din această zonă au fost construite în anul 1952, la cerința lui Leonid Brezhnev,
+                        pe o suprafață de 102 hectare. Peisajul este superb, deoarece parcul dispune de o suprafață cu un relief interesant
+                        și neobișnuit. Parcul are 4 intrări și dispune de o floră superbă. </p>
+                    <p> În parc se găsesc Cinematograful „De Zi”, Teatrul de vară cu 5.000 de locuri, Pavilionul de șah și joc de dame,
+                        Orășelul pentru copii „Andrieș”. Astfel, parcul este de profil larg, oricine poate veni aici să se bucure de peisaj,
+                        de liniște si de natură, să se recreeze sau să faca plajă. </p>
+                    <p> Aici se poate admira și Monumentul polițiștilor căzuți la datorie, Scara Cascadelor, Centrul cultural american
+                        (care se află chiar la intrarea în parc și în fața căruia se află Monumentul Doina și Ion Aldea-Teodorovici).
+                        În incinta parcului se gasește și o cafenea, iar lânga Orășelul copiilor se poate admira sculptura „Urșii”.
+                        Turnul pentru parașutism din acest parc este ideal pentru iubitorii de sporturi extreme. </p>
+                    <p> Oricine găsește o activitate în această zonă, indiferent de vârstă și preferință. </p>
+                </article>
+                <article id="gradina_publica_stefan_cel_mare_si_sfant">
+                    <h3> Grădină Publică Ștefan cel Mare și Sfânt </h3>
+                    <figure>
+                        <img src="materiale/gradina_publica_stefan_cel_mare_si_sfant.jpg" alt="Grădină Publică Ștefan cel Mare și Sfânt">
+                        <figcaption class="hiddenCaptions"> Grădină Publică Ștefan cel Mare și Sfânt </figcaption>
+                    </figure>
+                    <p> Grădina Publică Ștefan cel Mare și Sfânt din Chișinău este cel mai vechi parc realizat și construit într-o modalitate
+                        clasică. Amenajarea acestuia sub formă de grădină publică s-a terminat în anul 1835. Aici au fost plantați diferiți
+                        arbori și arbuști și 1000 de salcâmi, ceea ce face ca peisajul să fie desprins din basme. </p>
+                    <p> În parc se găsesc două fântâni arteziene, spațiu de joacă pentru copii și spații de recreere. Tot aici este monumentul
+                        lui Aleksandr Pușkin și cel a lui Ștefan cel Mare. În Grădină Publică Ștefan cel Mare și Sfânt se află Aleea Clasicilor,
+                        cu 12 busturi ale clasicilor din literatura românească. </p>
+                    <p> Oaza de verdeață din centrul orașului, grădina publică, este un loc ideal pentru plimbări, întâlniri sau pentru odihnă.
+                        Grădina are 7 intrări, iar intrarea principală este păzită de doi stâlpi din piatră albă, care se află în spatele
+                        monumentului lui Ștefan cel Mare. </p>
+                    <p> Ceea ce este interesant în această grădină este faptul că se găsesc copaci foarte vechi care ajung până la vârsta de 170
+                        de ani. Totodată, este unul dintre cele mai vechi modele de arhitectură peisagistică din Republica Moldova. </p>
+                    <p> În acest parc au loc tot felul de evenimente organizate de locuitorii din Chișinău. </p>
+                </article>
+            </section>
+            <section id="muzee">
+                <h2> Muzee </h2>
+                <article id="muzeul_national_de_istorie_a_moldovei">
+                    <h3> Muzeul Național de Istorie a Moldovei </h3>
+                    <figure>
+                        <img src="materiale/muzeul_national_de_istorie_a_moldovei.jpg" alt="Muzeul Național de Istorie a Moldovei">
+                        <figcaption class="hiddenCaptions"> Muzeul Național de Istorie a Moldovei </figcaption>
+                    </figure>
+                    <p> Inaugurat în anul 1987, Muzeul Național de Istorie a Moldovei din Chișinau are în arhiva sa 263 de mii de
+                        exponate, dintre care mai mult de jumătate sunt piese originale din patrimoniul național. </p>
+                    <p> Muzeul cuprinde colecția de arheologie, colecția de istorie, colecția de arme și armuri și colecția
+                        numismatică (monede). </p>
+                    <p> Colecția de arheologie cuprinde obiecte ce provin din săpături arheologice, achiziții sau transferuri precum:
+                        unelte din piatră cioplite și șlefuite, din os, cupru și bronz, ceramică pictată, arme, vase și ustensile casnice
+                        sau obiecte de podoabă. </p>
+                    <p> Colecția de istorie cuprinde obiecte cu totul și cu totul deosebite care creează atmosfera în care au trăit
+                        personalități culturale, politice și istorice din Republica Moldova. Din colecție fac parte următoarele obiecte:
+                        instrumente muzicale, mobilier ce reprezintă mai multe stiluri artistice, obiecte memoriale sau harți și planuri. </p>
+                    <p> Deosebită este și colecția de arme ce conține piese de armament occidentale, orientale și rusești din secolele
+                        XVI-XX. Aici se pot admira toate tipurile de arme albe și de foc, armuri, coifuri. </p>
+                </article>
+                <article id="muzeul_national_de_arta_al_moldovei">
+                    <h3> Muzeul Național de Artă al Moldovei </h3>
+                    <figure>
+                        <img src="materiale/muzeul_national_de_arta_al_moldovei.jpg" alt="Muzeul Național de Artă al Moldovei">
+                        <figcaption class="hiddenCaptions"> Muzeul Național de Artă al Moldovei </figcaption>
+                    </figure>
+                    <p> Muzeul Național de Artă al Moldovei a fost fondat în anul 1939 și, deși colecțiile s-au pierdut în timpul
+                        războiului, a fost reînființat în 1944. Pe o suprafață de 800 de metri pătrați, operele sunt structurate
+                        în 5 secții: artă medievală și creație populară, artă moldovenească, artă rusă, vest-europeană și orientală,
+                        scenografie și artă decorativ-aplicativă. </p>
+                    <p> Muzeul enumeră 44.000 de exponate în diferite colecții precum: colecția de pictură moldovnească, de artă antică,
+                        de artă medievală, de grafică moldovenească, sculptură sau artă decorativă. De asemenea mai include și colecții
+                        rusești de grafică, sculptură sau artă decorativă, colecția de numistică și medalistică. </p>
+                    <p> Expoziția permanentă „Artă națională și universală” din cadrul muzeului este compusă din cele mai reprezentative
+                        opere din patrimoniul muzeului. De asemenea colecția de artă medievală cuprinde cărți vechi, icoane sau obiecte
+                        bisericești specifice acestei zone plină de tradiție și cultură. </p>
+                    <p> Clădirea a fost construită din piatră albă și cărămidă roșie de către pictorul și sculptorul Alexandru Plămădeală
+                        și alți artistici plastici moldoveni. </p>
+                </article>
+            </section>
+            <section id="biserici">
+                <h2> Biserici </h2>
+                <article id="catedrala_mitropolitana_nasterea_domnului">
+                    <h3> Catedrala Mitropolitană „Nașterea Domnului” </h3>
+                    <figure>
+                        <img src="materiale/catedrala_mitropolitana_nasterea_domnului.jpg" alt="Catedrala Mitropolitană „Nașterea Domnului”">
+                        <figcaption class="hiddenCaptions"> Catedrala Mitropolitană „Nașterea Domnului” </figcaption>
+                    </figure>
+                    <p> Catedrala Mitropolitană „Nașterea Domnului” este o catedrală ortodoxă din Chișinău ce se află în apropierea pieței
+                    Marii Adunări Naționale și aparține Bisericii Ortodoxe din Moldova. </p>
+                    <p> Clădirea catedralei este un monument de arhitectură de însemnătate națională, introdus în Registrul monumentelor de
+                    istorie și cultură a municipiului Chișinău la inițiativa Academiei de Științe. </p>
+                    <p> Catedrala „Nașterea Domnului” a fost construită după proiectul arhitectului Avraam Melnikov. Aceasta este construită
+                        din piatră și cărămidă și are trei altare. Primul altar, fiind cel principal, are hramul Nașterea Maicii Domnului.
+                        Al doilea și al treilea altar sunt laterale, cel din dreapta are hramul Sfântul Ștefan cel Mare și cel din stânga are
+                        hramul Adormirea Maicii Domnului. </p>
+                    <p> Primul post de radio din Chișinău, Radio Basarabia, a fost inaugurat oficial prin transmiterea liturghiei de la
+                    Catedrala Mitropolitană pe 8 octombrie 1939. </p>
+                </article>
+                <article id="biserica_mazarache">
+                    <h3> Biserica Măzărache </h3>
+                    <figure>
+                        <img src="materiale/biserica_mazarache.jpg" alt="Biserica Măzărache">
+                        <figcaption class="hiddenCaptions"> Biserica Măzărache </figcaption>
+                    </figure>
+                    <p> Cel mai vechi edificiu (inclusiv ecleziastic) care s-a păstrat până în prezent pe teritoriul Chișinăului actual,
+                        și singurul care păstrează arhitectura medievală moldovenească. Biserica Măzărache este atestată documentar în anul
+                        1752 (anul sfințirii). Este numită în popor după numele ctitorului său - boierul, negustorul și pârcălabul de Chișinău
+                        Vasile Măzărache. </p>
+                    <p> În jurul bisericii se află şi cea mai veche necropolă a capitalei, datată cu secolele XV-XVI, iar pe aceeaşi colină
+                        au curs renumitele izvoare, de la care, probabil, și își trage numele orașul Chişinău. </p>
+                    <p> În anul 1955, printr-un gest aproape fantastic, autorităţile sovietice au cedat biserica ruşilor de rit vechi
+                        (lipovenilor) în schimbul catedralei lor, care fusese demolată în timpul construcţiei bulevardului Tineretului
+                        (azi b-dul Grigore Vieru). </p>
+                    <p> De atunci, accesul înăuntru în biserică este foarte limitat, oaspeții capitalei pot să viziteze doar ograda bisericii
+                        și acareturile din preajmă, inclusiv și câteva pietre funerare cu inscripții în slavona și moldoveneasca veche. </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <h3> Surse: </h3>
+            <ul>
+                <li> <a href="https://www.libertatea.ro/lifestyle/locuri-de-vizitat-in-chisinau-4132906"> libertatea.ro </a> </li>
+                <li> <a href="https://www.infotour.ro/ghid-turistic/moldova/chisinau/obiective-turistice/"> infotour.ro </a> </li>
+                <li> <a href="https://dinbasarabia.ro/turism/arcul-de-triumf-din-chisinau/"> dinbasarabia.ro </a> </li>
+                <li> <a href="https://visit.chisinau.md/obiective-turistice/"> visit.chisinau.md </a> </li>
+                <li> <a href="https://ro.wikipedia.org/wiki/Catedrala_Mitropolitan%C4%83_%E2%80%9ENa%C8%99terea_Domnului%E2%80%9D_din_Chi%C8%99in%C4%83u"> ro.wikipedia.org </a> </li>
+            </ul>
+            <p id="rights"> Proiect realizat de: Chircu Andrei-Denis </p>
+        </footer>
+    </body>
+</html>

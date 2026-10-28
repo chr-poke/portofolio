@@ -1,0 +1,427 @@
+[
+    {
+        "tip": "monument",
+        "nume": "Arcul de Triumf",
+        "program": [
+            {
+                "zi": "Luni",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Marți",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Miercuri",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Joi",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Vineri",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Sâmbătă",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Duminică",
+                "ore": [
+                    0,
+                    24
+                ]
+            }
+        ]
+    },
+    {
+        "tip": "monument",
+        "nume": "Parlamentul Republicii Moldova",
+        "program": [
+            {
+                "zi": "Luni",
+                "ore": [
+                    9,
+                    16
+                ]
+            },
+            {
+                "zi": "Marți",
+                "ore": [
+                    9,
+                    16
+                ]
+            },
+            {
+                "zi": "Miercuri",
+                "ore": [
+                    9,
+                    16
+                ]
+            },
+            {
+                "zi": "Joi",
+                "ore": null
+            },
+            {
+                "zi": "Vineri",
+                "ore": null
+            },
+            {
+                "zi": "Sâmbătă",
+                "ore": null
+            },
+            {
+                "zi": "Duminică",
+                "ore": null
+            }
+        ]
+    },
+    {
+        "tip": "parc",
+        "nume": "Parcul „Valea Morilor”",
+        "program": [
+            {
+                "zi": "Luni",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Marți",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Miercuri",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Joi",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Vineri",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Sâmbătă",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Duminică",
+                "ore": [
+                    0,
+                    24
+                ]
+            }
+        ]
+    },
+    {
+        "tip": "parc",
+        "nume": "Grădină Publică Ștefan cel Mare și Sfânt",
+        "program": [
+            {
+                "zi": "Luni",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Marți",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Miercuri",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Joi",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Vineri",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Sâmbătă",
+                "ore": [
+                    0,
+                    24
+                ]
+            },
+            {
+                "zi": "Duminică",
+                "ore": [
+                    0,
+                    24
+                ]
+            }
+        ]
+    },
+    {
+        "tip": "muzeu",
+        "nume": "Muzeul Național de Istorie a Moldovei",
+        "program": [
+            {
+                "zi": "Luni",
+                "ore": [
+                    10,
+                    17
+                ]
+            },
+            {
+                "zi": "Marți",
+                "ore": [
+                    10,
+                    17
+                ]
+            },
+            {
+                "zi": "Miercuri",
+                "ore": [
+                    10,
+                    17
+                ]
+            },
+            {
+                "zi": "Joi",
+                "ore": [
+                    10,
+                    17
+                ]
+            },
+            {
+                "zi": "Vineri",
+                "ore": [
+                    10,
+                    17
+                ]
+            },
+            {
+                "zi": "Sâmbătă",
+                "ore": [
+                    10,
+                    17
+                ]
+            },
+            {
+                "zi": "Duminică",
+                "ore": [
+                    10,
+                    17
+                ]
+            }
+        ]
+    },
+    {
+        "tip": "muzeu",
+        "nume": "Muzeul Național de Artă al Moldovei",
+        "program": [
+            {
+                "zi": "Luni",
+                "ore": null
+            },
+            {
+                "zi": "Marți",
+                "ore": [
+                    10,
+                    18
+                ]
+            },
+            {
+                "zi": "Miercuri",
+                "ore": [
+                    10,
+                    18
+                ]
+            },
+            {
+                "zi": "Joi",
+                "ore": [
+                    10,
+                    18
+                ]
+            },
+            {
+                "zi": "Vineri",
+                "ore": [
+                    10,
+                    18
+                ]
+            },
+            {
+                "zi": "Sâmbătă",
+                "ore": [
+                    10,
+                    18
+                ]
+            },
+            {
+                "zi": "Duminică",
+                "ore": [
+                    10,
+                    18
+                ]
+            }
+        ]
+    },
+    {
+        "tip": "biserica",
+        "nume": "Catedrala Mitropolitană „Nașterea Domnului”",
+        "program": [
+            {
+                "zi": "Luni",
+                "ore": [
+                    8,
+                    16
+                ]
+            },
+            {
+                "zi": "Marți",
+                "ore": [
+                    8,
+                    16
+                ]
+            },
+            {
+                "zi": "Miercuri",
+                "ore": [
+                    8,
+                    16
+                ]
+            },
+            {
+                "zi": "Joi",
+                "ore": [
+                    8,
+                    16
+                ]
+            },
+            {
+                "zi": "Vineri",
+                "ore": [
+                    8,
+                    16
+                ]
+            },
+            {
+                "zi": "Sâmbătă",
+                "ore": [
+                    8,
+                    20
+                ]
+            },
+            {
+                "zi": "Duminică",
+                "ore": [
+                    8,
+                    20
+                ]
+            }
+        ]
+    },
+    {
+        "tip": "biserica",
+        "nume": "Biserica Măzărache",
+        "program": [
+            {
+                "zi": "Luni",
+                "ore": [
+                    8,
+                    16
+                ]
+            },
+            {
+                "zi": "Marți",
+                "ore": [
+                    8,
+                    16
+                ]
+            },
+            {
+                "zi": "Miercuri",
+                "ore": [
+                    8,
+                    16
+                ]
+            },
+            {
+                "zi": "Joi",
+                "ore": [
+                    8,
+                    16
+                ]
+            },
+            {
+                "zi": "Vineri",
+                "ore": [
+                    8,
+                    16
+                ]
+            },
+            {
+                "zi": "Sâmbătă",
+                "ore": [
+                    8,
+                    16
+                ]
+            },
+            {
+                "zi": "Duminică",
+                "ore": [
+                    7,
+                    17
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,637 @@
+@font-face
+{
+    font-family: host;
+    src: url(materiale/HostGrotesk-VariableFont_wght.ttf);
+}
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: host, verdana;
+}
+
+a
+{
+    color: hsl(200, 90%, 50%)
+}
+
+header
+{
+    background-color: hsl(200, 50%, 50%);
+    height: 60px;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    overflow: hidden;
+}
+
+#logo
+{
+    font-size: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    color: white;
+}
+
+#nav
+{
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+#nav a
+{
+    font-size: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#logo:hover, #nav a:hover, #menu-icon:hover, #mobile-nav a:hover
+{
+    background-color: hsl(200, 50%, 40%);
+}
+
+#menu-icon
+{
+    background-color: hsl(200, 50%, 50%);
+    border: 0px;
+    height: 60px;
+    display: none;
+    float: right;
+    cursor: pointer;
+}
+
+#menu-icon img
+{
+    height: 60px;
+    padding: 12px;
+}
+
+#mobile-nav
+{
+    background-color: hsl(200, 50%, 30%);
+    width: 100%;
+    height: 240px;
+    top: 60px;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+#mobile-nav a
+{
+    font-size: 18px;    
+    padding: 12px;
+    display: block;    
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}        
+
+main
+{
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    min-height: calc(100vh - 156px);
+}
+
+main section
+{
+    width: 100%;
+    display: block;
+    scroll-margin-top: 60px;
+}
+
+h2
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.box
+{
+    padding: 9px;
+    border-width: 3px;
+    border-radius: 12px;
+    border-style: solid;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    display: block;
+}
+
+.topleft
+{
+    border-top-left-radius: 12px;
+}
+
+.topright
+{
+    border-top-right-radius: 12px;
+}
+
+.bottomleft
+{
+    border-bottom-left-radius: 12px;
+}
+
+.bottomright
+{
+    border-bottom-right-radius: 12px;
+}
+
+.top
+{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.bottom
+{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.empty
+{
+    border: 0px;
+    background-color: white;
+    padding: 9px;
+}
+
+table
+{
+    border: 0.1px solid;
+    border-radius: 12px;
+    border-color: hsl(200, 50%, 30%);
+    background-color: #265973;
+    width: 100%;
+    margin-top: 12px;
+}
+
+th
+{
+    border: 0.1px solid;
+    border-color: hsl(200, 50%, 30%);
+    background-color: hsl(200, 50%, 65%);
+    color: white;
+    padding: 9px;
+    font-size: 20px;
+}
+
+td
+{
+    border: 0.1px solid;
+    border-color: hsl(200, 50%, 30%);
+    background-color: hsl(200, 50%, 90%);
+    color: hsl(200, 50%, 30%);
+    padding: 9px;
+    overflow: hidden;
+}
+
+#trasee .container
+{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+}
+
+#harta
+{
+    height: 100%;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+
+#harta img
+{
+    height: 100%;
+    aspect-ratio: 5 / 4;
+    border-width: 3px;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: black;
+    display: block;
+}
+
+#links-trasee
+{
+    height: 100%;
+    max-width: 378.2px;
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#traseul1
+{
+    border-color: white;
+    background-color: hsl(0, 60%, 50%);
+    color: white;
+}
+
+#traseul1:hover
+{
+    border-color: hsl(0, 60%, 50%);
+    background-color: hsl(0, 60%, 35%);
+}
+
+#traseul2
+{
+    border-color: white;
+    background-color: hsl(25, 60%, 50%);
+    color: white;
+}
+
+#traseul2:hover
+{
+    border-color: hsl(25, 60%, 50%);
+    background-color: hsl(25, 60%, 35%);
+}
+
+#traseul3
+{
+    border-color: white;
+    background-color: hsl(57, 60%, 50%);
+    color: white;
+}
+
+#traseul3:hover
+{
+    border-color: hsl(57, 60%, 50%);
+    background-color: hsl(57, 60%, 35%);
+}
+
+#traseul4
+{
+    border-color: white;
+    background-color: hsl(130, 60%, 50%);
+    color: white;
+}
+
+#traseul4:hover
+{
+    border-color: hsl(130, 60%, 50%);
+    background-color: hsl(130, 60%, 35%);
+}
+
+#traseul5
+{
+    border-color: white;
+    background-color: hsl(230, 60%, 50%);
+    color: white;
+}
+
+#traseul5:hover
+{
+    border-color: hsl(230, 60%, 50%);
+    background-color: hsl(230, 60%, 35%);
+}
+
+#traseul6
+{
+    border-color: white;
+    background-color: hsl(290, 60%, 50%);
+    color: white;
+}
+
+#traseul6:hover
+{
+    border-color: hsl(290, 60%, 50%);
+    background-color: hsl(290, 60%, 35%);
+}
+
+#anunturi .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+#anunturi .box
+{
+    color: hsl(0, 60%, 50%);
+    border-color: hsl(0, 60%, 50%);
+    background-color: hsl(0, 60%, 90%);
+}
+
+#servicii th
+{
+    width: 33.33%;
+}
+
+#servicii ul
+{
+    padding-left: 16px;
+}
+
+#servicii .foto
+{
+    padding: 0px;
+}
+
+#servicii img
+{
+    width: 100%;
+    vertical-align: middle;
+}
+
+#servicii .mobile-tabel
+{
+    display: none;
+}
+
+#faq table
+{
+    margin-top: 0px;
+}
+
+#faq .q
+{
+    background-color: hsl(200, 50%, 65%);
+    color: white;
+    display: list-item;
+    list-style-type: disclosure-closed;
+    list-style-position: inside;
+}
+
+#faq .q:hover
+{
+    cursor: pointer; 
+    background-color: hsl(200, 50%, 45%);
+}
+
+#faq .a
+{
+    display: none;
+}
+
+#about .container
+{
+    width: 100%;
+    display: flex;
+    gap: 12px;
+}
+
+#about .box
+{
+    border-color: hsl(200, 50%, 30%);
+    background-color: hsl(200, 50%, 90%);
+    color: hsl(200, 50%, 30%);
+}
+
+#about p
+{
+    padding-top: 12px;
+}
+
+footer
+{
+    background-color: hsl(200, 50%, 30%);
+    color: white;
+    padding: 12px;
+    position: relative;
+}
+
+footer h3
+{
+    padding-bottom: 12px;
+}
+
+#contact
+{
+    width: 50%;
+}
+
+#rights
+{
+    text-align: right;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+
+.sens-tren h2
+{
+    padding-bottom: 0px;;
+}
+
+.sens-tren .container
+{
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.sens-tren .container table
+{
+    margin-top: 0px;
+    width: auto;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+.sens-tren .container .box
+{
+    height: 40.4px;
+    border-color: hsl(200, 50%, 30%);
+    background-color: hsl(200, 50%, 30%);
+    color: white;
+    cursor: pointer;
+}
+
+.sens-tren .container .box:hover
+{
+    background-color: hsl(200, 50%, 40%);
+}
+
+.opriri-tren
+{
+    display: none;
+    overflow-x: scroll;
+    background-color: white;
+    text-align: center;
+    border-width: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.opriri-tren td
+{
+    border-width: 3px;
+    border-radius: 12px;
+    text-wrap: nowrap;
+}
+
+.arrow
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-color: white;
+}
+
+.arrow img
+{
+    vertical-align: middle;
+}
+
+#fus-orar h3
+{
+    color: hsl(0, 60%, 50%);
+    padding-top: 12px;
+}
+
+@media screen and (max-width: 1039.2px)
+{
+    #trasee .container
+    {
+        display: block;
+        height: auto;
+        aspect-ratio: 2 / 1;
+    }
+}
+
+@media screen and (max-width: 795.2px)
+{
+    #links-trasee
+    {
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 772px)
+{
+    .sens-tren .container
+    {
+        flex-direction: column;
+    }
+
+    .sens-tren .container table, .sens-tren .container .box
+    {
+        width: 100%;
+        text-wrap: auto;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    #nav
+    {
+        display: none
+    }
+
+    #menu-icon
+    {
+        display: block;
+    }
+
+    #harta
+    {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        float: none;
+    }
+
+    #harta img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    #links-trasee
+    {
+        max-width: none;
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+        overflow-y: visible;
+    }
+
+    #links-trasee .box
+    {
+        margin-top: 6px;
+    }
+
+    #tabel
+    {
+        display: none;
+    }
+
+    #servicii .mobile-tabel
+    {
+        display: table;
+    }
+
+    #about .container
+    {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 440px)
+{
+    #contact
+    {
+        width: 100%;
+    }
+
+    #rights
+    {
+        padding-top: 12px;
+        text-align: left;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 300px)
+{
+    .info-tren
+    {
+        overflow-x: scroll;
+        display: block;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 293.6px)
+{
+    .col3
+    {
+        overflow-x: scroll;
+        display: block;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 220px)
+{
+    .col2
+    {
+        overflow-x: scroll;
+        display: block;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
