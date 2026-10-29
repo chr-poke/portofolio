@@ -195,7 +195,7 @@ section > h2 {
 }
 
 article {
-    background-image: url("materiale/paper.jpg");
+    background-image: url("materiale/paper.webp");
     background-size: cover;
     box-shadow: 5px 5px 10px hsl(43, 63%, 25%);
     border: 0.2em solid hsl(25, 63%, 20%);
@@ -325,7 +325,7 @@ footer > ul {
     margin: 2em;
     width: calc(100% - 4em);
     height: calc(100% - 4em);
-    background-image: url("materiale/paper.jpg");
+    background-image: url("materiale/paper.webp");
     background-size: cover;
     border: 0.2em solid hsl(25, 63%, 20%);
     border-radius: 1em;

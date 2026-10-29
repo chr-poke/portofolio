@@ -24,14 +24,14 @@ main {
 
 #halftone_st {
     width: 10vw;
-    background: url("images/halftone_st.png");
+    background: url("images/halftone_st.webp");
     background-repeat: repeat;
     background-size: 100%;
 }
 
 #halftone_dr {
     width: 10vw;
-    background: url("images/halftone_dr.png");
+    background: url("images/halftone_dr.webp");
     background-repeat: repeat;
     background-size: 100%;
 }
